@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
+import Game from './game';
+
 
 class RecentGames extends Component {
 
@@ -10,18 +12,12 @@ class RecentGames extends Component {
     }
 
     renderGames = () => {
-        if (!this.props.recentGames) return null;
 
-        return this.props.recentGames
-            .slice(0, 5)  
-            .map((game, index) => (
-                <li className='recent-games-item' key={index}>
-                    <p className='recent-games-names'>{game.name}</p>
-                    {game.screenshot && <img className='recent-game-img' src={game.screenshot} alt={game.name} />}
-                </li>
-            ));
-        }
-
+        return (
+            <Game recentGames={this.props.recentGames}/>
+        )
+        
+    }
     render() {
         return (
             <div className="recent-games">

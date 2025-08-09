@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Field, reduxForm} from 'redux-form';
 import { withRouter } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class SearchBar extends Component {
 
@@ -10,7 +11,16 @@ class SearchBar extends Component {
     }
 
     renderInput(field) {
-        return <input type="text" placeholder="Search Games" {...field.input} />
+        return (
+            <div className='search-input-wrapper'>
+                <FontAwesomeIcon className="lupa" icon="magnifying-glass" />
+                <input    
+                    className="search-bar-container" 
+                    type="text" placeholder="Search Games" 
+                    {...field.input} 
+                />
+            </div>
+        )
     }
 
     render() {
