@@ -5,6 +5,7 @@ import Logo from './logo';
 import SearchBar from './searchBar';
 import RecentGames from './recentGames';
 import Icons from './helpers/icons';
+import RecentTrailers from './Trailers/recentTrailers';
 
 export default class Home extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class Home extends Component {
           <Logo/>
           <SearchBar/>
           <RecentGames/>
+          <RecentTrailers />
         </div>
       </div>
     );
