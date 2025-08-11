@@ -1,10 +1,12 @@
 import { 
-    faMagnifyingGlass 
+    faMagnifyingGlass,
+    faArrowLeft
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 library.add(
-    faMagnifyingGlass
+    faMagnifyingGlass,
+    faArrowLeft
 );
 
 export default null;

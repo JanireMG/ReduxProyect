@@ -11,6 +11,7 @@ class RecentGames extends Component {
         this.props.fetchRecentGames();
     }
 
+
     renderGames = () => {
 
         return (
@@ -23,7 +24,7 @@ class RecentGames extends Component {
             <div className="recent-games">
                 <div className="recent-games-wrapper">
                     <div className="recent-games-heading">Recent Games</div>
-                    <ul className="recent-games-posts">
+                    <ul className="recent-games-posts" >
                         {this.renderGames()}
                     </ul>
                 </div>

@@ -1,20 +1,21 @@
+
 .recent-games-heading{
-    text-align: center;
-    color: orange;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+  text-align: center;
+  color: orange;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .recent-games-posts {
-  display: flex;
-  flex-direction: row;  
-  gap: 20px;  
-  list-style: none;          
-  padding: 0 20px;
-  justify-content: center;
-  
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  list-style: none;  
+  cursor: pointer; 
 }
+
 
 .recent-game-item {
   display: flex;
@@ -28,12 +29,12 @@
   margin-bottom: 10px;
   font-weight: bold;
   text-align: center;
-  cursor: pointer;
+
 }
 
 .recent-game-img {
   width: 350px;
-  height: auto;
+  height: 200px;
   border-radius: 8px;
 }
 

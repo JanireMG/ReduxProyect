@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import { reducer as form } from 'redux-form';
 import games from './gamesReducers';
-import trailers from './trailerReducers';
+import searchReducer from './searchGameReducer';
 
 const rootReducer = combineReducers({
   form,
   games,
-  trailers
+  search: searchReducer,
 });
 
 export default rootReducer;
