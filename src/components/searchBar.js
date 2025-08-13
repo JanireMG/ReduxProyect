@@ -15,6 +15,8 @@ class SearchBar extends Component {
         className="search-bar-container"
         type="text"
         placeholder="Search Games"
+        spellCheck="false"
+        
         {...input}
       />
     </div>
